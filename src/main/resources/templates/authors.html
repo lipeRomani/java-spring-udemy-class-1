@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelead.org">
+<head>
+    <title>Authors</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Books List</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Last name</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+        <td th:text="${author.id}">111</td>
+        <td th:text="${author.firstName}">Foo</td>
+        <td th:text="${author.lastName}">Bar</td>
+    </tr>
+</table>
+</body>
+</html>
